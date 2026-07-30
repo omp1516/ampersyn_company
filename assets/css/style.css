@@ -325,29 +325,69 @@ background:#0D2740;
 HERO
 ========================================== */
 
-<div class="eyebrow">
+.hero{
 
-<span class="orange-dot"></span>
+background:#F8F6F1;
 
-AI-NATIVE MICROSOFT TRANSFORMATION
+padding:120px 0;
 
-</div>
+}
 
-<h1>
+.hero h1{
 
-AI systems for
+font-size:82px;
 
-<span>Microsoft business.</span>
+font-weight:800;
 
-</h1>
+line-height:1;
 
-<p>
+color:#081C2D;
 
-We empower organizations with Microsoft Dynamics 365,
-Power Platform, Azure AI, Copilot and enterprise cloud technologies
-that accelerate growth and innovation.
+}
 
-</p>
+.hero h1 span{
+
+display:block;
+
+font-family:Georgia,serif;
+
+font-style:italic;
+
+font-weight:400;
+
+color:#2D7FF9;
+
+}
+
+.hero p{
+
+font-size:24px;
+
+line-height:1.8;
+
+color:#4B5563;
+
+max-width:700px;
+
+margin-top:35px;
+
+}
+
+.orange-dot{
+
+width:16px;
+
+height:16px;
+
+background:#FF6A3C;
+
+display:inline-block;
+
+border-radius:50%;
+
+margin-right:16px;
+
+}
 
 /* ==========================================
 STATS
