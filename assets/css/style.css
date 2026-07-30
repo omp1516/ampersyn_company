@@ -129,17 +129,63 @@ letter-spacing:.6px;
 HEADER
 ========================================== */
 
+body{
+
+background:#F8F6F1;
+
+color:#0F2238;
+
+font-family:Manrope,sans-serif;
+
+}
+
+.announcement{
+
+height:48px;
+
+background:#DFFF5A;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:14px;
+
+letter-spacing:3px;
+
+font-weight:700;
+
+color:#0F2238;
+
+}
+
+.dot{
+
+width:12px;
+
+height:12px;
+
+border-radius:50%;
+
+background:#2D7FF9;
+
+margin-right:20px;
+
+}
+
 .header{
+
+background:#F8F6F1;
+
+border-bottom:1px solid #E7E2D9;
 
 position:sticky;
 
 top:0;
 
 z-index:999;
-
-background:#fff;
-
-box-shadow:0 2px 18px rgba(0,0,0,.05);
 
 }
 
@@ -151,7 +197,7 @@ justify-content:space-between;
 
 align-items:center;
 
-padding:18px 0;
+height:95px;
 
 }
 
@@ -161,19 +207,19 @@ display:flex;
 
 align-items:center;
 
-gap:15px;
+gap:20px;
 
 }
 
-.logo-mark{
+.logo-box{
 
-width:52px;
+width:62px;
 
-height:52px;
+height:62px;
 
-border-radius:14px;
+border-radius:18px;
 
-background:linear-gradient(135deg,#0B3A67,#1E88E5);
+background:#081C2D;
 
 display:flex;
 
@@ -181,35 +227,39 @@ justify-content:center;
 
 align-items:center;
 
+overflow:hidden;
+
+box-shadow:0 12px 30px rgba(0,0,0,.15);
+
+}
+
+.logo-box img{
+
+width:48px;
+
+}
+
+.logo-text h2{
+
 font-size:34px;
 
-font-weight:800;
+font-weight:300;
 
-color:#fff;
+margin:0;
 
-box-shadow:0 12px 25px rgba(30,136,229,.25);
-
-}
-
-.logo h2{
-
-font-size:28px;
-
-font-weight:800;
-
-color:#0B3A67;
+color:#0F2238;
 
 }
 
-.logo p{
+.logo-text p{
 
-font-size:12px;
+margin-top:4px;
 
-color:#64748B;
+font-size:13px;
 
-letter-spacing:1px;
+letter-spacing:5px;
 
-text-transform:uppercase;
+color:#6B7280;
 
 }
 
@@ -217,51 +267,57 @@ nav ul{
 
 display:flex;
 
-gap:35px;
+gap:38px;
 
-align-items:center;
+list-style:none;
 
 }
 
 nav a{
 
-font-weight:600;
+text-decoration:none;
 
-color:#334155;
+font-size:18px;
 
-transition:var(--transition);
+font-weight:500;
+
+color:#0F2238;
+
+transition:.3s;
 
 }
 
 nav a:hover{
 
-color:#0B3A67;
+color:#2D7FF9;
 
 }
 
-.btn{
+.consult-btn{
 
-padding:14px 28px;
+padding:18px 34px;
 
-background:#0B3A67;
+background:#081C2D;
 
-color:#fff;
+border-radius:16px;
 
-border-radius:50px;
+color:#DFFF5A;
 
-font-weight:700;
+text-decoration:none;
 
-transition:var(--transition);
+font-size:18px;
 
-box-shadow:var(--shadow);
+font-weight:600;
+
+transition:.3s;
 
 }
 
-.btn:hover{
+.consult-btn:hover{
 
 transform:translateY(-3px);
 
-background:#072A4D;
+background:#0D2740;
 
 }
 
