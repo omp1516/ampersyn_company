@@ -106,9 +106,6 @@ margin:auto;
 /* ==========================================
 TOP BAR
 ========================================== */
-
-.announcement{
-
 .announcement{
     background: #D8FF45;   /* Light green from logo */
     color: #0F2233;        /* Dark navy text */
@@ -118,8 +115,6 @@ TOP BAR
     font-weight: 700;
     letter-spacing: 0.8px;
     text-transform: uppercase;
-}
-
 }
 
 /* ==========================================
