@@ -109,19 +109,16 @@ TOP BAR
 
 .announcement{
 
-background:linear-gradient(90deg,#0B3A67,#1E88E5);
-
-color:#fff;
-
-padding:12px;
-
-text-align:center;
-
-font-size:14px;
-
-font-weight:600;
-
-letter-spacing:.6px;
+.announcement{
+    background: #D8FF45;   /* Light green from logo */
+    color: #0F2233;        /* Dark navy text */
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
 
 }
 
