@@ -3,28 +3,24 @@
    ========================================== */
 
 :root{
+--primary:#0F2233;
+--primary-dark:#081A2B;
 
---primary:#0B3A67;
---primary-dark:#072A4D;
+--accent:#2A7EF7;
 
---secondary:#6FCF97;
+--green:#D8FF45;
 
---accent:#1E88E5;
-
---dark:#111827;
-
---light:#F7FAFC;
+--light:#F8F6F1;
 
 --white:#FFFFFF;
 
---gray:#64748B;
+--text:#1B2533;
 
---gray-light:#E5E7EB;
+--gray:#7A8694;
 
---border:#E2E8F0;
+--border:#ECECEC;
 
---shadow:0 10px 40px rgba(0,0,0,.08);
-
+--shadow:0 15px 40px rgba(15,34,51,.08);
 --shadow-hover:0 20px 60px rgba(0,0,0,.15);
 
 --radius:18px;
@@ -63,7 +59,7 @@ font-size:16px;
 
 line-height:1.7;
 
-background:#fff;
+background:#F8F6F1;
 
 color:var(--dark);
 
@@ -126,9 +122,9 @@ HEADER
     top:0;
     z-index:999;
 
-    background:rgba(255,255,255,.92);
+   background:rgba(248,246,241,.95);
 
-    backdrop-filter:blur(18px);
+   backdrop-filter:blur(18px);
 
     border-bottom:1px solid rgba(0,0,0,.05);
 
@@ -303,7 +299,7 @@ margin-bottom:22px;
 
 display:block;
 
-color:#1E88E5;
+color:#0F2233;
 
 }
 
@@ -329,7 +325,7 @@ margin-bottom:50px;
 
 padding:18px 34px;
 
-background:#0B3A67;
+background:#0F2233;
 
 color:#fff;
 
@@ -663,7 +659,7 @@ gap:30px;
 
 .service-card{
 
-background:#fff;
+background:#FCFCFA;
 
 padding:40px;
 
