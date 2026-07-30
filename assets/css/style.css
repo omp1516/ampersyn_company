@@ -122,17 +122,17 @@ HEADER
 ========================================== */
 
 .header{
+    position:sticky;
+    top:0;
+    z-index:999;
 
-position:sticky;
+    background:rgba(255,255,255,.92);
 
-top:0;
+    backdrop-filter:blur(18px);
 
-z-index:999;
+    border-bottom:1px solid rgba(0,0,0,.05);
 
-background:#fff;
-
-box-shadow:0 2px 18px rgba(0,0,0,.05);
-
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
 }
 
 .header .container{
@@ -163,6 +163,17 @@ padding:18px 0;
     font-size:48px;
     font-weight:700;
     line-height:1;
+}
+.logo-box{
+    width:64px;
+    height:64px;
+    border-radius:18px;
+    overflow:hidden;
+}
+
+.logo-box img{
+    width:100%;
+    height:100%;
 }
 
 .tagline{
@@ -231,11 +242,18 @@ HERO
 
 .hero{
 
-padding:100px 0;
+padding:130px 0 110px;
 
 background:
-radial-gradient(circle at top right,#DFF6E7 0%,transparent 35%),
-linear-gradient(#fff,#f9fbfd);
+radial-gradient(circle at top right,
+rgba(30,136,229,.08),
+transparent 45%),
+
+radial-gradient(circle at bottom left,
+rgba(216,255,69,.08),
+transparent 35%),
+
+#fff;
 
 }
 
@@ -275,13 +293,9 @@ margin-bottom:22px;
 
 .hero h1{
 
-font-size:68px;
-
-line-height:1.05;
-
-font-weight:800;
-
-margin-bottom:28px;
+   font-size:78px;
+    line-height:1;
+    letter-spacing:-2px;
 
 }
 
@@ -295,13 +309,9 @@ color:#1E88E5;
 
 .hero p{
 
-font-size:20px;
-
-color:#64748B;
-
-margin-bottom:35px;
-
-max-width:650px;
+  font-size:22px;
+    line-height:1.8;
+    color:#556274;
 
 }
 
@@ -332,12 +342,23 @@ transition:.3s;
 box-shadow:var(--shadow);
 
 }
+.primary-btn:hover{
+
+transform:translateY(-4px);
+
+background:#1473E6;
+
+box-shadow:0 25px 60px rgba(20,115,230,.35);
+
+}
 
 .primary-btn:hover{
 
 transform:translateY(-4px);
 
-box-shadow:var(--shadow-hover);
+background:#1473E6;
+
+box-shadow:0 25px 60px rgba(20,115,230,.35);
 
 }
 
@@ -488,6 +509,10 @@ position:absolute;
 padding:16px 24px;
 
 background:#fff;
+
+border:1px solid #EEF2F5;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
 
 border-radius:50px;
 
@@ -1076,7 +1101,19 @@ STATISTICS
     color:rgba(255,255,255,.9);
     font-size:18px;
 }
+.stat{
 
+transition:.3s;
+
+}
+
+.stat:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+}
 /* ==========================================
 TESTIMONIALS
 ========================================== */
@@ -1399,4 +1436,32 @@ nav{
     padding:30px;
 }
 
+}
+nav ul li a{
+    position:relative;
+    text-decoration:none;
+    color:#24364b;
+    font-weight:600;
+    transition:.3s;
+    padding:8px 0;
+}
+
+nav ul li a:hover{
+    color:#1473E6;
+}
+
+nav ul li a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-8px;
+    width:0;
+    height:3px;
+    background:#D8FF45;
+    border-radius:10px;
+    transition:.35s;
+}
+
+nav ul li a:hover::after{
+    width:100%;
 }
