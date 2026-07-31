@@ -3,28 +3,24 @@
    ========================================== */
 
 :root{
+--primary:#0F2233;
+--primary-dark:#081A2B;
 
---primary:#0B3A67;
---primary-dark:#072A4D;
+--accent:#2A7EF7;
 
---secondary:#6FCF97;
+--green:#D8FF45;
 
---accent:#1E88E5;
-
---dark:#111827;
-
---light:#F7FAFC;
+--light:#F8F6F1;
 
 --white:#FFFFFF;
 
---gray:#64748B;
+--text:#1B2533;
 
---gray-light:#E5E7EB;
+--gray:#7A8694;
 
---border:#E2E8F0;
+--border:#ECECEC;
 
---shadow:0 10px 40px rgba(0,0,0,.08);
-
+--shadow:0 15px 40px rgba(15,34,51,.08);
 --shadow-hover:0 20px 60px rgba(0,0,0,.15);
 
 --radius:18px;
@@ -63,7 +59,7 @@ font-size:16px;
 
 line-height:1.7;
 
-background:#fff;
+background:#F8F6F1;
 
 color:var(--dark);
 
@@ -106,23 +102,15 @@ margin:auto;
 /* ==========================================
 TOP BAR
 ========================================== */
-
 .announcement{
-
-background:linear-gradient(90deg,#0B3A67,#1E88E5);
-
-color:#fff;
-
-padding:12px;
-
-text-align:center;
-
-font-size:14px;
-
-font-weight:600;
-
-letter-spacing:.6px;
-
+    background: #D8FF45;   /* Light green from logo */
+    color: #0F2233;        /* Dark navy text */
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
 }
 
 /* ==========================================
@@ -130,17 +118,17 @@ HEADER
 ========================================== */
 
 .header{
+    position:sticky;
+    top:0;
+    z-index:999;
 
-position:sticky;
+   background:rgba(248,246,241,.95);
 
-top:0;
+   backdrop-filter:blur(18px);
 
-z-index:999;
+    border-bottom:1px solid rgba(0,0,0,.05);
 
-background:#fff;
-
-box-shadow:0 2px 18px rgba(0,0,0,.05);
-
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
 }
 
 .header .container{
@@ -156,63 +144,42 @@ padding:18px 0;
 }
 
 .logo{
-
-display:flex;
-
-align-items:center;
-
-gap:15px;
-
+    display:flex;
+    align-items:center;
+    gap:18px;
 }
 
-.logo-mark{
-
-width:52px;
-
-height:52px;
-
-border-radius:14px;
-
-background:linear-gradient(135deg,#0B3A67,#1E88E5);
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-font-size:34px;
-
-font-weight:800;
-
-color:#fff;
-
-box-shadow:0 12px 25px rgba(30,136,229,.25);
-
+.logo-text{
+    display:flex;
+    flex-direction:column;
 }
 
-.logo h2{
-
-font-size:28px;
-
-font-weight:800;
-
-color:#0B3A67;
-
+.logo-text h2{
+    margin:0;
+    font-size:48px;
+    font-weight:700;
+    line-height:1;
+}
+.logo-box{
+    width:64px;
+    height:64px;
+    border-radius:18px;
+    overflow:hidden;
 }
 
-.logo p{
-
-font-size:12px;
-
-color:#64748B;
-
-letter-spacing:1px;
-
-text-transform:uppercase;
-
+.logo-box img{
+    width:100%;
+    height:100%;
 }
 
+.tagline{
+    margin-top:8px;
+    font-size:13px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    color:#7b8591;
+    font-weight:600;
+}
 nav ul{
 
 display:flex;
@@ -271,11 +238,18 @@ HERO
 
 .hero{
 
-padding:100px 0;
+padding:130px 0 110px;
 
 background:
-radial-gradient(circle at top right,#DFF6E7 0%,transparent 35%),
-linear-gradient(#fff,#f9fbfd);
+radial-gradient(circle at top right,
+rgba(30,136,229,.08),
+transparent 45%),
+
+radial-gradient(circle at bottom left,
+rgba(216,255,69,.08),
+transparent 35%),
+
+#fff;
 
 }
 
@@ -292,10 +266,11 @@ align-items:center;
 }
 
 .eyebrow{
-
+ 
+    letter-spacing:1px;
 display:inline-block;
 
-padding:8px 16px;
+padding:8px 18px;
 
 border-radius:50px;
 
@@ -303,9 +278,9 @@ background:#E9F6EE;
 
 color:#0B3A67;
 
-font-size:13px;
+font-size:12px;
 
-font-weight:800;
+ font-weight:700;
 
 letter-spacing:1px;
 
@@ -315,33 +290,28 @@ margin-bottom:22px;
 
 .hero h1{
 
-font-size:68px;
-
-line-height:1.05;
-
-font-weight:800;
-
-margin-bottom:28px;
-
+    font-size:58px;
+    line-height:1.08;
+    font-weight:700;
+    letter-spacing:-1px;
+    margin-bottom:24px;
+    color:#0F2233;
 }
 
 .hero h1 span{
 
-display:block;
-
-color:#1E88E5;
-
+ display:block;
+    color:#2A7EF7;
+    font-weight:700;
+}
 }
 
 .hero p{
 
-font-size:20px;
-
-color:#64748B;
-
-margin-bottom:35px;
-
-max-width:650px;
+   font-size:18px;
+    line-height:1.8;
+    color:#64748B;
+    max-width:620px;
 
 }
 
@@ -359,7 +329,7 @@ margin-bottom:50px;
 
 padding:18px 34px;
 
-background:#0B3A67;
+background:#0F2233;
 
 color:#fff;
 
@@ -372,12 +342,23 @@ transition:.3s;
 box-shadow:var(--shadow);
 
 }
+.primary-btn:hover{
+
+transform:translateY(-4px);
+
+background:#1473E6;
+
+box-shadow:0 25px 60px rgba(20,115,230,.35);
+
+}
 
 .primary-btn:hover{
 
 transform:translateY(-4px);
 
-box-shadow:var(--shadow-hover);
+background:#1473E6;
+
+box-shadow:0 25px 60px rgba(20,115,230,.35);
 
 }
 
@@ -529,6 +510,10 @@ padding:16px 24px;
 
 background:#fff;
 
+border:1px solid #EEF2F5;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
 border-radius:50px;
 
 box-shadow:var(--shadow);
@@ -557,6 +542,7 @@ box-shadow:var(--shadow-hover);
 .node:nth-child(7){left:50px;bottom:90px;}
 .node:nth-child(8){left:0;top:280px;}
 .node:nth-child(9){left:70px;top:120px;}
+
 /* ==========================================
 SECTION
 ========================================== */
@@ -677,7 +663,7 @@ gap:30px;
 
 .service-card{
 
-background:#fff;
+background:#FCFCFA;
 
 padding:40px;
 
@@ -1115,7 +1101,19 @@ STATISTICS
     color:rgba(255,255,255,.9);
     font-size:18px;
 }
+.stat{
 
+transition:.3s;
+
+}
+
+.stat:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+}
 /* ==========================================
 TESTIMONIALS
 ========================================== */
@@ -1439,22 +1437,31 @@ nav{
 }
 
 }
-@keyframes ripple{
-
-from{
-
-transform:scale(0);
-
-opacity:.6;
-
+nav ul li a{
+    position:relative;
+    text-decoration:none;
+    color:#24364b;
+    font-weight:600;
+    transition:.3s;
+    padding:8px 0;
 }
 
-to{
-
-transform:scale(4);
-
-opacity:0;
-
+nav ul li a:hover{
+    color:#1473E6;
 }
 
+nav ul li a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-8px;
+    width:0;
+    height:3px;
+    background:#D8FF45;
+    border-radius:10px;
+    transition:.35s;
+}
+
+nav ul li a:hover::after{
+    width:100%;
 }
