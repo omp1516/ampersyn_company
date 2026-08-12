@@ -1626,3 +1626,89 @@ nav ul li a:hover::after{
     .about-technology{padding:28px 24px;gap:25px;}
     .testimonial-note{align-items:flex-start;flex-direction:column;gap:8px;}
 }
+
+
+/* =========================================================
+   PREMIUM ABOUT + TESTIMONIALS
+   ========================================================= */
+.about-premium{position:relative;overflow:hidden;padding-top:135px;padding-bottom:105px;background:radial-gradient(circle at 92% 12%,rgba(42,126,247,.09),transparent 28%),radial-gradient(circle at 8% 78%,rgba(216,255,69,.10),transparent 25%),#fff}
+.about-premium-head,.testimonials-head{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(280px,.75fr);gap:80px;align-items:end;margin-bottom:75px}
+.about-premium-head h2,.testimonials-head h2{margin-top:18px;max-width:800px;font-size:clamp(42px,5vw,72px);line-height:1.02;letter-spacing:-2.5px;color:var(--primary)}
+.about-premium-head h2 em,.testimonials-head h2 em{font-style:normal;color:#2A7EF7}
+.about-lead,.testimonials-head>p{color:#667386;font-size:17px;line-height:1.9;max-width:520px;margin-left:auto}
+.about-premium-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:stretch}
+.about-story{min-height:520px;padding:60px;border-radius:32px;color:#fff;background:radial-gradient(circle at 90% 10%,rgba(42,126,247,.34),transparent 32%),linear-gradient(145deg,#0F2233,#071A2B);box-shadow:0 30px 90px rgba(15,34,51,.16);position:relative;overflow:hidden}
+.about-story::after{content:"A";position:absolute;right:-30px;bottom:-80px;font-size:330px;line-height:1;font-weight:800;color:rgba(255,255,255,.025);pointer-events:none}
+.about-eyebrow{display:block;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:1.5px;color:#D8FF45;margin-bottom:45px}
+.about-story h3{max-width:680px;font-size:clamp(32px,4vw,52px);line-height:1.08;letter-spacing:-1.8px;margin-bottom:28px;position:relative;z-index:1}
+.about-story p{max-width:650px;color:#C9D7E5;line-height:1.85;margin-bottom:18px;position:relative;z-index:1}
+.about-signature{display:flex;align-items:center;gap:14px;margin-top:42px;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#fff;position:relative;z-index:1}
+.signature-line{width:46px;height:2px;background:#D8FF45}
+.about-principles{display:flex;flex-direction:column;gap:14px}
+.principle-card{flex:1;min-height:155px;display:grid;grid-template-columns:48px 1fr;gap:20px;align-items:start;padding:30px 32px;border:1px solid #E8EDF2;border-radius:25px;background:rgba(255,255,255,.72);box-shadow:0 12px 40px rgba(15,34,51,.055);transition:transform .4s ease,box-shadow .4s ease,border-color .4s ease}
+.principle-card:hover{transform:translateX(8px);border-color:#C9D8E8;box-shadow:0 20px 55px rgba(15,34,51,.10)}
+.principle-card>span{font-family:'DM Mono',monospace;font-size:12px;color:#2A7EF7;padding-top:4px}
+.principle-card b{display:block;color:var(--primary);font-size:20px;margin-bottom:8px}
+.principle-card p{color:#718096;font-size:14px;line-height:1.7}
+.about-tech-rail{margin-top:28px;padding:24px 28px;border-top:1px solid #E8EDF2;border-bottom:1px solid #E8EDF2;display:flex;align-items:center;gap:30px}
+.about-tech-rail>span{flex:0 0 auto;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:1.5px;color:#8895A4}
+.about-tech-items{display:flex;align-items:center;justify-content:space-between;gap:18px;width:100%;flex-wrap:wrap}
+.about-tech-items b{color:#334155;font-size:13px;font-weight:700}
+.about-tech-items i{width:4px;height:4px;border-radius:50%;background:#D8FF45}
+
+.testimonials-premium{background:#F3F6F8;padding-top:125px;padding-bottom:125px;position:relative;overflow:hidden}
+.testimonials-premium::before{content:"";position:absolute;width:620px;height:620px;right:-280px;top:80px;border:1px solid rgba(42,126,247,.10);border-radius:50%}
+.testimonial-stage{position:relative}
+.testimonial-rail{height:610px;overflow-y:auto;overflow-x:hidden;scroll-snap-type:y mandatory;padding:6px 20px 6px 2px;scrollbar-width:thin;scrollbar-color:#B9C7D5 transparent}
+.testimonial-rail::-webkit-scrollbar{width:5px}.testimonial-rail::-webkit-scrollbar-track{background:transparent}.testimonial-rail::-webkit-scrollbar-thumb{background:#B9C7D5;border-radius:20px}
+.testimonial-premium{min-height:570px;scroll-snap-align:start;scroll-snap-stop:always;padding:52px 58px;margin-bottom:20px;border-radius:30px;border:1px solid rgba(15,34,51,.09);background:#fff;box-shadow:0 18px 65px rgba(15,34,51,.08);display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;transition:transform .5s ease,box-shadow .5s ease}
+.testimonial-premium::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:linear-gradient(180deg,#D8FF45,#2A7EF7)}
+.testimonial-premium:hover{transform:translateY(-4px);box-shadow:0 25px 85px rgba(15,34,51,.13)}
+.testimonial-top{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.testimonial-index{font-family:'DM Mono',monospace;font-size:12px;color:#2A7EF7}
+.testimonial-domain{padding:8px 12px;border-radius:999px;background:#F0F6FC;color:#456078;font-family:'DM Mono',monospace;font-size:9px;letter-spacing:1.2px}
+.testimonial-quote{max-width:950px;font-size:clamp(28px,4vw,52px);line-height:1.18;letter-spacing:-1.5px;color:var(--primary);font-weight:600;margin:45px 0}
+.testimonial-bottom{display:flex;justify-content:space-between;align-items:end;border-top:1px solid #E8EDF2;padding-top:25px}
+.testimonial-bottom b{display:block;color:var(--primary);font-size:14px;margin-bottom:4px}
+.testimonial-bottom span{color:#7A8694;font-size:13px}
+.testimonial-arrow{width:48px;height:48px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:#0F2233;color:#D8FF45!important;font-size:20px!important}
+.testimonial-controls{display:flex;align-items:center;gap:18px;margin-top:25px}
+.testimonial-controls button{width:48px;height:48px;border:1px solid #D7E0E8;border-radius:50%;background:#fff;color:#0F2233;cursor:pointer;font-size:18px;transition:.3s ease}
+.testimonial-controls button:hover{background:#0F2233;color:#D8FF45;transform:translateY(-2px)}
+.testimonial-progress{flex:1;height:3px;background:#DCE4EA;border-radius:10px;overflow:hidden}
+.testimonial-progress span{display:block;height:100%;width:16.66%;background:#0F2233;transition:width .5s ease}
+.testimonial-disclaimer{margin-top:18px;color:#8A96A3;font-size:11px;letter-spacing:.2px}
+
+@media(max-width:1024px){
+.about-premium-head,.testimonials-head{grid-template-columns:1fr;gap:25px}
+.about-lead,.testimonials-head>p{margin-left:0}.about-premium-grid{grid-template-columns:1fr}.about-story{min-height:auto}.testimonial-rail{height:560px}.testimonial-premium{min-height:520px}
+}
+@media(max-width:768px){
+.about-premium,.testimonials-premium{padding-top:80px;padding-bottom:80px}.about-premium-head h2,.testimonials-head h2{font-size:42px;letter-spacing:-1.5px}
+.about-story{padding:35px 28px;border-radius:24px}.about-story h3{font-size:34px}.principle-card{padding:25px}
+.about-tech-rail{align-items:flex-start;flex-direction:column;gap:18px}.about-tech-items{justify-content:flex-start}.about-tech-items i{display:none}
+.testimonial-rail{height:500px;padding-right:5px}.testimonial-premium{min-height:465px;padding:32px 27px;border-radius:24px}
+.testimonial-quote{font-size:29px;line-height:1.25;margin:30px 0}.testimonial-domain{max-width:60%;text-align:right}
+}
+
+/* Expanded testimonial library */
+.testimonials .testimonial-grid{
+  max-height:760px;
+  overflow-y:auto;
+  overflow-x:hidden;
+  padding:8px 16px 8px 2px;
+  scroll-snap-type:y proximity;
+  scrollbar-width:thin;
+  scrollbar-color:#B9C7D5 transparent;
+}
+.testimonials .testimonial-card{
+  scroll-snap-align:start;
+  min-height:260px;
+}
+.testimonials .testimonial-grid::-webkit-scrollbar{width:5px}
+.testimonials .testimonial-grid::-webkit-scrollbar-track{background:transparent}
+.testimonials .testimonial-grid::-webkit-scrollbar-thumb{background:#B9C7D5;border-radius:20px}
+@media(max-width:768px){
+  .testimonials .testimonial-grid{max-height:620px}
+  .testimonials .testimonial-card{min-height:300px}
+}
