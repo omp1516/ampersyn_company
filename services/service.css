@@ -188,6 +188,23 @@ h1{max-width:760px;font-size:clamp(44px,5.35vw,76px);font-weight:500;letter-spac
   @keyframes service-flyout-in{from{opacity:0;transform:translateY(-7px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
 }
 
+/* Mobile navigation keeps every service and site destination within reach. */
+.mobile-menu-toggle{display:none}
+@media(max-width:800px){
+  .site-header{position:relative;z-index:20}
+  .nav-wrap{min-height:74px}
+  .mobile-menu-toggle{display:inline-flex;align-items:center;justify-content:center;padding:9px 12px;border:1px solid rgba(8,41,70,.28);border-radius:999px;background:transparent;color:var(--navy);font:600 11px Manrope,Arial,sans-serif;letter-spacing:.03em}
+  .site-header .nav{display:none;position:absolute;top:100%;left:0;right:0;z-index:30;align-items:stretch;gap:0;padding:12px 28px;border-top:1px solid rgba(8,41,70,.1);border-bottom:1px solid rgba(8,41,70,.13);background:rgba(248,251,250,.98);box-shadow:0 16px 28px rgba(8,41,70,.12)}
+  .site-header .nav.is-open{display:flex;flex-direction:column}
+  .site-header .nav>a{padding:13px 0;border-bottom:1px solid rgba(8,41,70,.1)}
+  .site-header .nav .nav-cta{margin-top:10px;padding:12px 15px;text-align:center;border-bottom:1px solid var(--navy)}
+  .services-menu{position:static;width:100%;border-bottom:1px solid rgba(8,41,70,.1)}
+  .services-menu summary{padding:13px 0}
+  .services-flyout{position:static;right:auto;width:100%;padding:4px 0 12px;border:0;box-shadow:none;background:transparent;grid-template-columns:1fr;gap:0}
+  .services-flyout a,.services-flyout a:hover{padding:10px 0!important;border-radius:0;background:transparent!important;opacity:1!important;transform:none!important;animation:none!important}
+  .services-flyout a:before{display:none}
+}
+
 /* Editorial motion pass: quiet, layered and responsive rather than bouncy. */
 @media(prefers-reduced-motion:no-preference){
   .services-flyout{padding:16px;background:rgba(255,255,255,.91);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:0 22px 50px rgba(8,41,70,.13);animation:service-flyout-premium .34s cubic-bezier(.16,1,.3,1)}
@@ -200,4 +217,9 @@ h1{max-width:760px;font-size:clamp(44px,5.35vw,76px);font-weight:500;letter-spac
   .hub-card:hover{transform:none;box-shadow:0 15px 28px rgba(8,41,70,.11)}
   @keyframes service-flyout-premium{from{opacity:0;transform:translateY(-4px) scale(.992);filter:blur(2px)}to{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}}
   @keyframes service-link-premium{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+}
+
+@media(max-width:800px){
+  .services-flyout{padding:4px 0 12px;background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none;box-shadow:none;animation:none}
+  .services-flyout a{padding:10px 0;border-radius:0;opacity:1;animation:none}
 }
