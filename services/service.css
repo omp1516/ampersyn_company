@@ -196,7 +196,9 @@ h1{max-width:760px;font-size:clamp(44px,5.35vw,76px);font-weight:500;letter-spac
   .mobile-menu-toggle{display:inline-flex;align-items:center;justify-content:center;padding:9px 12px;border:1px solid rgba(8,41,70,.28);border-radius:999px;background:transparent;color:var(--navy);font:600 11px Manrope,Arial,sans-serif;letter-spacing:.03em}
   .site-header .nav{display:none;position:absolute;top:100%;left:0;right:0;z-index:30;align-items:stretch;gap:0;padding:12px 28px;border-top:1px solid rgba(8,41,70,.1);border-bottom:1px solid rgba(8,41,70,.13);background:rgba(248,251,250,.98);box-shadow:0 16px 28px rgba(8,41,70,.12)}
   .site-header .nav.is-open{display:flex;flex-direction:column}
-  .site-header .nav>a{padding:13px 0;border-bottom:1px solid rgba(8,41,70,.1)}
+  /* Override the compact desktop header rules: every destination belongs in the mobile drawer. */
+  .site-header .nav.is-open>a{display:block!important;padding:13px 0;border-bottom:1px solid rgba(8,41,70,.1)}
+  .site-header .nav.is-open>a[href="/#updates"],.site-header .nav.is-open>a[href="/#testimonials"]{display:block!important}
   .site-header .nav .nav-cta{margin-top:10px;padding:12px 15px;text-align:center;border-bottom:1px solid var(--navy)}
   .services-menu{position:static;width:100%;border-bottom:1px solid rgba(8,41,70,.1)}
   .services-menu summary{padding:13px 0}
@@ -222,4 +224,23 @@ h1{max-width:760px;font-size:clamp(44px,5.35vw,76px);font-weight:500;letter-spac
 @media(max-width:800px){
   .services-flyout{padding:4px 0 12px;background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none;box-shadow:none;animation:none}
   .services-flyout a{padding:10px 0;border-radius:0;opacity:1;animation:none}
+}
+
+/* Mobile services reads as a composed accordion rather than a long plain list. */
+@media(max-width:800px){
+  .services-menu{margin:5px 0 7px;border:0}
+  .services-menu summary{display:flex;align-items:center;justify-content:space-between;padding:12px 14px!important;border:1px solid rgba(8,41,70,.13);border-radius:4px;background:linear-gradient(100deg,rgba(8,125,193,.07),rgba(217,255,67,.14));font-weight:700}
+  .services-menu summary::after{margin-left:auto;color:#087dc1;transition:transform .25s cubic-bezier(.16,1,.3,1)}
+  .services-menu[open] summary{border-color:rgba(8,125,193,.32);border-bottom-left-radius:0;border-bottom-right-radius:0}
+  .services-menu[open] summary::after{transform:rotate(180deg)}
+  .services-flyout{margin:0;padding:7px 10px 10px!important;border:1px solid rgba(8,125,193,.15);border-top:0;background:rgba(239,250,252,.72)!important;box-shadow:none!important}
+  .services-flyout a,.services-flyout a:hover{padding:10px 8px!important;border-bottom:1px solid rgba(8,41,70,.09)!important;color:var(--navy)!important;font-size:12px;background:transparent!important}
+  .services-flyout a:last-child{border-bottom:0!important}
+}
+@media(max-width:800px) and (prefers-reduced-motion:no-preference){
+  .services-menu[open] .services-flyout{animation:mobile-service-panel-in .28s cubic-bezier(.16,1,.3,1) both!important}
+  .services-menu[open] .services-flyout a{opacity:0!important;animation:mobile-service-link-in .32s cubic-bezier(.16,1,.3,1) forwards!important}
+  .services-menu[open] .services-flyout a:nth-child(1){animation-delay:.025s!important}.services-menu[open] .services-flyout a:nth-child(2){animation-delay:.05s!important}.services-menu[open] .services-flyout a:nth-child(3){animation-delay:.075s!important}.services-menu[open] .services-flyout a:nth-child(4){animation-delay:.1s!important}.services-menu[open] .services-flyout a:nth-child(5){animation-delay:.125s!important}.services-menu[open] .services-flyout a:nth-child(6){animation-delay:.15s!important}.services-menu[open] .services-flyout a:nth-child(7){animation-delay:.175s!important}.services-menu[open] .services-flyout a:nth-child(8){animation-delay:.2s!important}.services-menu[open] .services-flyout a:nth-child(9){animation-delay:.225s!important}.services-menu[open] .services-flyout a:nth-child(10){animation-delay:.25s!important}.services-menu[open] .services-flyout a:nth-child(11){animation-delay:.275s!important}.services-menu[open] .services-flyout a:nth-child(12){animation-delay:.3s!important}.services-menu[open] .services-flyout a:nth-child(13){animation-delay:.325s!important}.services-menu[open] .services-flyout a:nth-child(14){animation-delay:.35s!important}
+  @keyframes mobile-service-panel-in{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:translateY(0)}}
+  @keyframes mobile-service-link-in{from{opacity:0;transform:translateX(-7px)}to{opacity:1;transform:translateX(0)}}
 }
