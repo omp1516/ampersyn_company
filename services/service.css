@@ -150,3 +150,6 @@ h1{max-width:760px;font-size:clamp(44px,5.35vw,76px);font-weight:500;letter-spac
 .related-grid a:nth-child(1){background:#effaff}.related-grid a:nth-child(2){background:#f8fce9}.related-grid a:nth-child(3){background:#f6f1ff}.related-grid a:hover{background:var(--deep)}
 .hub-card{min-height:225px}.hub-card:nth-child(3n+1){background:linear-gradient(160deg,#f0fbfd,#fff 70%)}.hub-card:nth-child(3n+2){background:linear-gradient(160deg,#f9fce9,#fff 70%)}.hub-card:nth-child(3n){background:linear-gradient(160deg,#f7f1ff,#fff 70%)}.hub-card h2{margin-top:45px;font-size:22px;font-weight:600}
 @media(max-width:600px){.hero{padding:67px 0 53px}h1{font-size:clamp(40px,12vw,57px)}.work-card h3{margin-top:30px}.section-title h2{font-size:36px}}
+
+/* Brand-blue emphasis for the editorial hero line. */
+.hero h1 em{color:#087dc1}
