@@ -16,7 +16,7 @@ const microsoftContext={
 };
 
 function commonHeader(){
-  return `<div id="top"></div><div class="announcement"><div class="shell">Engineering AI-first enterprise solutions <b>•</b> Microsoft, data & intelligent automation</div></div><header class="site-header"><div class="shell nav-wrap"><a class="brand" href="/"><img src="https://ampersyn.com/assets/ampersyn-logo.png" alt="Ampersyn logo">Ampersyn</a><nav class="nav"><a href="/">Home</a><details class="services-menu"><summary>Services</summary><div class="services-flyout">${Object.entries(services).map(([slug,s])=>`<a href="/services/${slug}/">${s.title}</a>`).join("")}</div></details><a href="/#agentic-ai">AI & Agents</a><a href="/#updates">Microsoft updates</a><a href="/#testimonials">Client perspectives</a><a href="/about-us/">About</a><a class="nav-cta" href="/#contact">Start a conversation ↗</a></nav></div></header>`;
+  return `<div id="top"></div><div class="announcement"><div class="shell">Engineering AI-first enterprise solutions <b>•</b> Microsoft, data & intelligent automation</div></div><header class="site-header"><div class="shell nav-wrap"><a class="brand" href="/"><img src="https://ampersyn.com/assets/ampersyn-logo.png" alt="Ampersyn logo">Ampersyn</a><nav class="nav"><a href="/">Home</a><details class="services-menu"><summary>Services</summary><div class="services-flyout">${Object.entries(services).map(([slug,s])=>`<a href="/services/${slug}/">${s.title}</a>`).join("")}</div></details><a href="/#agentic-ai">AI & Agents</a><a href="/#updates">Microsoft updates</a><a href="/#testimonials">Client perspectives</a><a href="/about-us/">About us</a><a class="nav-cta" href="/#contact">Start a conversation ↗</a></nav></div></header>`;
 }
 function commonFooter(){
   return `<footer class="footer"><div class="shell footer-grid"><div class="footer-intro"><a class="brand" href="/"><img src="https://ampersyn.com/assets/ampersyn-logo.png" alt="Ampersyn logo">Ampersyn</a><p>Engineering intelligent business transformation through Microsoft cloud, data and AI.</p><a class="footer-email" href="mailto:contact@ampersyn.com">contact@ampersyn.com ↗</a><a class="footer-phone" href="tel:+918897648544"><b>●</b>+91-8897648544</a></div><div class="footer-links"><p>Explore</p><a href="/services/">Services</a><a href="/#updates">Microsoft updates</a><a href="/#testimonials">Client perspectives</a><a href="/about-us/">About Ampersyn</a></div><div class="footer-links"><p>Talk to us</p><a href="/#contact">Start a conversation</a><a href="mailto:contact@ampersyn.com">contact@ampersyn.com</a><a href="tel:+918897648544">+91-8897648544</a></div></div><div class="shell footer-bottom"><span>© 2026 Ampersyn. All rights reserved.</span><a href="#top">Back to top ↑</a></div></footer>`;
@@ -40,7 +40,7 @@ const platformMarks={
 
 function serviceVisual(s,slug){
   const mark=platformMarks[slug];
-  return `<figure class="hero-art hero-platform-mark"><img src="${mark.src}" alt="${mark.name} logo" width="180" height="180"><figcaption>${mark.name}</figcaption></figure>`;
+  return `<figure class="hero-art hero-platform-mark"><img src="${mark.src}" alt="${mark.name} logo" width="180" height="180"></figure>`;
 }
 
 function enhancedServicePage(s,slug){
