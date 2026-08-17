@@ -19,6 +19,13 @@
 </style><style>.footer-audience p,.footer-inner .footer-audience p:last-child{text-align:left}</style><style>.hero h1 em{color:#087dc1!important}.home-services-menu{position:relative}.home-services-menu summary{list-style:none;cursor:pointer;font-size:13px;font-weight:700;color:var(--ink)}.home-services-menu summary::-webkit-details-marker{display:none}.home-services-menu summary:after{content:'⌄';margin-left:6px}.home-services-menu[open] summary:after{content:'⌃'}.home-services-flyout{position:absolute;top:27px;left:-20px;z-index:30;width:585px;padding:16px;border:1px solid rgba(8,41,70,.14);background:#fff;box-shadow:0 22px 46px rgba(8,41,70,.17);display:grid;grid-template-columns:repeat(3,1fr);gap:4px}.home-services-flyout a{padding:10px;color:var(--ink);font-size:12px!important;text-decoration:none}.home-services-flyout a:hover{background:var(--cloud)}@media(max-width:800px){.home-services-menu{display:none}}</style></head>
 <body id="top">
   <style>
+    @media(max-width:980px){.announcement-message a{display:inline;margin-left:0}}
+    @media(max-width:690px){.announcement .announcement-inner{flex-direction:column;gap:6px;padding:8px 18px}.announcement-message{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 9px;text-align:center;font-size:9px;line-height:1.35}.announcement-message .announcement-dot{display:none}.time-rail{margin:0}.time-rail span{padding:0 7px}}
+  </style>
+  <style>
+    @media(max-width:800px){.site-header{position:relative}.site-header .nav-wrap{min-height:74px}.site-header .nav{display:none;position:absolute;top:100%;left:0;right:0;z-index:40;align-items:stretch;gap:0;padding:12px 28px;border-top:1px solid rgba(8,41,70,.1);border-bottom:1px solid rgba(8,41,70,.13);background:rgba(248,251,250,.98);box-shadow:0 16px 28px rgba(8,41,70,.12)}.site-header .nav.is-open{display:flex;flex-direction:column}.site-header .nav>a{padding:13px 0;border-bottom:1px solid rgba(8,41,70,.1)}.site-header .nav>a:last-child{border-bottom:0}.site-header .nav .nav-cta{margin-top:10px;padding:12px 15px;text-align:center;border-bottom:1px solid #082946}.home-services-menu{display:block!important;position:static;width:100%;border-bottom:1px solid rgba(8,41,70,.1)}.home-services-menu summary{padding:13px 0;font-size:13px}.home-services-flyout{position:static;width:100%;padding:4px 0 12px;border:0;box-shadow:none;background:transparent;grid-template-columns:1fr;gap:0}.home-services-flyout a,.home-services-flyout a:hover{padding:10px 0!important;border-radius:0;background:transparent!important;color:var(--ink)!important;opacity:1!important;transform:none!important;animation:none!important}.home-services-flyout a:before{display:none}.menu-button{display:inline-flex!important}}
+  </style>
+  <style>
     .announcement .announcement-inner{justify-content:space-between;gap:28px}.announcement-message{display:flex;align-items:center;justify-content:center;gap:12px;min-width:0}.announcement-message .announcement-dot{flex:0 0 auto}.announcement-message p{margin:0}.announcement-message a{margin-left:16px;white-space:nowrap}.time-rail{display:flex;align-items:center;gap:0;margin-left:auto;font:10px 'DM Mono',monospace;letter-spacing:.045em;color:#d8e5eb;white-space:nowrap}.time-rail span{display:flex;align-items:baseline;gap:7px;padding:0 13px;border-left:1px solid rgba(216,229,235,.22)}.time-rail span:first-child{border-left:0}.time-rail b{color:#d9ff43;font-weight:500}.time-rail time{font-variant-numeric:tabular-nums;color:#fff}@media(max-width:980px){.announcement-message a{display:none}.time-rail span{padding:0 9px}.announcement .announcement-inner{gap:12px}}@media(max-width:690px){.announcement{height:auto;min-height:40px}.announcement .announcement-inner{justify-content:center;padding-top:9px;padding-bottom:9px}.announcement-message{display:none}.time-rail{margin:0;gap:0}.time-rail span{padding:0 9px}}
   </style>
   <style>
@@ -35,6 +42,11 @@
       @keyframes home-services-premium{from{opacity:0;transform:translateY(-4px) scale(.992);filter:blur(2px)}to{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}}
       @keyframes home-service-link{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
     }
+  </style>
+  <style>
+    @media(max-width:980px){.announcement-message a{display:inline!important;margin-left:0}}
+    .announcement-message .announcement-dot{display:inline-block!important;width:8px;height:8px;border-radius:50%;background:#d9ff43;box-shadow:0 0 0 4px rgba(217,255,67,.16);animation:home-live-dot 1.8s ease-in-out infinite}@keyframes home-live-dot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.52;transform:scale(.76)}}
+    @media(max-width:690px){.announcement .announcement-inner{height:auto!important;min-height:72px;flex-direction:column;gap:6px;padding:8px 18px}.announcement-message{display:flex!important;flex-wrap:wrap;justify-content:center;gap:4px 9px;text-align:center;font-size:9px;line-height:1.35}.announcement-message .announcement-dot{display:inline-block!important;margin-right:2px}.time-rail{margin:0}.time-rail span{padding:0 7px}}
   </style>
   <div class="page-glow glow-one"></div><div class="page-glow glow-two"></div>
   <div class="announcement"><div class="shell announcement-inner"><div class="announcement-message"><span class="announcement-dot"></span><p>Engineering AI-first enterprise solutions</p><a href="#agentic-ai">Discover our AI capabilities <b>↗</b></a></div><div class="time-rail" aria-label="Current time across our regions"><span><b>INDIA</b><time data-zone="Asia/Kolkata">--:--</time></span><span><b>EUROPE</b><time data-zone="Europe/London">--:--</time></span><span><b>US</b><time data-zone="America/New_York">--:--</time></span></div></div></div>
@@ -132,6 +144,9 @@
   <footer><div class="shell footer-inner"><div class="footer-brand"><a class="brand" href="#top"><img src="assets/ampersyn-logo.png" alt="Ampersyn logo"><span>Ampersyn</span></a><p>Engineering intelligent business transformation through Microsoft cloud, data and AI.</p><a class="footer-email" href="mailto:contact@ampersyn.com">contact@ampersyn.com <b>↗</b></a><a class="footer-phone" href="tel:+918897648544"><b>●</b>+91-8897648544</a></div><div class="footer-column"><h3>Capabilities</h3><a href="#capabilities">Dynamics 365 CRM</a><a href="#capabilities">Power Platform</a><a href="#capabilities">Power Pages</a><a href="#agentic-ai">AI agents &amp; Copilot</a></div><div class="footer-column"><h3>Explore</h3><a href="#updates">Microsoft updates</a><a href="#approach">Our approach</a><a href="#testimonials">Client perspectives</a><a href="/about-us/">About Ampersyn</a><a href="#contact">Start a conversation</a></div><div class="footer-column footer-audience"><h3>Built for</h3><p>Startups finding product-market fit.</p><p>Scale-ups building operational muscle.</p><p>Global teams navigating transformation.</p></div></div><div class="shell footer-bottom"><p>© 2026 Ampersyn. All rights reserved.</p><p>Hyderabad, India · Working globally</p><a href="#top">Back to top <b>↑</b></a></div></footer>
   <script src="script.js?v=4"></script>
   <script>
+    (function(){var toggle=document.querySelector('.menu-button'),nav=document.querySelector('.site-header .nav');if(!toggle||!nav)return;toggle.addEventListener('click',function(){nav.classList.toggle('is-open');});nav.addEventListener('click',function(event){if(event.target.closest('a'))nav.classList.remove('is-open');});}());
+  </script>
+  <script>
     (function(){
       var clocks=document.querySelectorAll('[data-zone]');
       function updateClocks(){
@@ -141,6 +156,8 @@
         });
       }
       updateClocks();setInterval(updateClocks,1000);
+      function keepMobileAnnouncementVisible(){var compact=window.matchMedia('(max-width: 690px)').matches,message=document.querySelector('.announcement-message'),link=message&&message.querySelector('a'),rail=document.querySelector('.time-rail'),shell=document.querySelector('.announcement-inner');if(!message||!link||!rail||!shell)return;if(compact){message.style.setProperty('display','flex','important');link.style.setProperty('display','inline','important');shell.style.setProperty('height','auto','important');shell.style.setProperty('min-height','74px','important');shell.style.setProperty('flex-direction','column','important');shell.style.setProperty('padding','8px 18px','important');rail.style.setProperty('margin','0','important');}else{message.removeAttribute('style');link.removeAttribute('style');shell.removeAttribute('style');rail.removeAttribute('style');}}
+      keepMobileAnnouncementVisible();window.addEventListener('resize',keepMobileAnnouncementVisible);
     }());
   </script>
 </body>
