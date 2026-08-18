@@ -10,6 +10,7 @@ body{margin:0;background:var(--paper);color:var(--navy);font-family:Manrope,Aria
 .nav-wrap{min-height:85px;display:flex;align-items:center;justify-content:space-between;gap:30px}
 .brand{display:flex;align-items:center;gap:10px;color:var(--navy);font-size:21px;font-weight:700;letter-spacing:-.05em;text-decoration:none}
 .brand img{width:39px;height:39px;border-radius:9px;object-fit:contain}
+.footer .brand img{width:44px;height:40px;border-radius:0!important;background:transparent!important;box-shadow:none!important;object-fit:contain}
 .nav{display:flex;align-items:center;gap:28px}
 .nav>a,.services-menu summary{color:var(--navy);font-size:13px;font-weight:600;text-decoration:none;cursor:pointer;list-style:none}
 .services-menu{position:relative}
