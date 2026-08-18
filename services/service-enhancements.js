@@ -69,3 +69,5 @@ else{
   if(grid){grid.innerHTML=Object.entries(services).map(([slug,item])=>`<a class="hub-card" href="/services/${slug}/"><span>Capability</span><h2>${item.title}</h2><p>${item.intro}</p></a>`).join("");}
 }
 initMobileServiceNav();
+const footerPhone=document.querySelector('footer .footer-phone');
+if(footerPhone&&!document.querySelector('.footer-address'))footerPhone.insertAdjacentHTML('afterend','<address class="footer-address">13th Floor, Unit 12A04B<br>Manjera Trinity Corporate<br>JNTU–Hitech, Kukatpally<br>Hyderabad, Telangana — 500072</address>');
