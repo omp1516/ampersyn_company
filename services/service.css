@@ -116,17 +116,18 @@ h1 em{font-family:var(--serif);font-weight:400}
 .guidance-link{display:inline-flex;margin-top:25px;padding-bottom:5px;border-bottom:1px solid var(--navy);color:var(--navy);font-size:13px;font-weight:700;text-decoration:none}
 .guidance-link b{margin-left:7px;color:#087dc1}
 .footer{padding:58px 0 20px}
-.footer-grid{display:grid;grid-template-columns:1.45fr .8fr .85fr;gap:45px;padding-bottom:46px}
+.footer-grid{display:grid;grid-template-columns:1.2fr 1.45fr .72fr .78fr;gap:36px;padding-bottom:46px}
 .footer-intro p{max-width:360px;margin:17px 0;color:#b7cbd5;font-size:13px;line-height:1.65}
 .footer-email{display:block;margin-top:18px;color:#fff;font-size:13px;font-weight:700;text-decoration:none}
 .footer-links{display:flex;flex-direction:column;gap:10px}
 .footer-links p{margin:2px 0 9px;color:var(--lime);font:10px 'DM Mono',monospace;letter-spacing:.1em;text-transform:uppercase}
 .footer-links a{color:#d8e5eb;font-size:13px;text-decoration:none}
 .footer-links a:hover{color:#fff}
+.footer-directory .footer-service-links{columns:2;column-gap:18px}.footer-directory .footer-service-links a{display:block;break-inside:avoid;margin-bottom:8px;font-size:12px;line-height:1.4}
 .footer-bottom{display:flex;justify-content:space-between;gap:25px;padding-top:18px;border-top:1px solid rgba(255,255,255,.17);color:#b7cbd5;font-size:11px}
 .footer-bottom a{color:#fff;text-decoration:none}
 @media(max-width:1100px){.nav{gap:17px}.nav>a,.services-menu summary{font-size:12px}.nav-cta{padding:11px 13px}}
-@media(max-width:900px){.context-list,.footer-grid{grid-template-columns:1fr}.context-list div:not(:first-child){padding-left:0;border-left:0}.context-list div{padding-right:0}.footer-grid{gap:32px}.footer-bottom{align-items:flex-start;flex-direction:column}.nav>a[href="/#updates"],.nav>a[href="/#testimonials"]{display:none}}
+@media(max-width:900px){.context-list,.footer-grid{grid-template-columns:1fr}.context-list div:not(:first-child){padding-left:0;border-left:0}.context-list div{padding-right:0}.footer-grid{gap:32px}.footer-directory .footer-service-links{columns:1}.footer-bottom{align-items:flex-start;flex-direction:column}.nav>a[href="/#updates"],.nav>a[href="/#testimonials"]{display:none}}
 @media(max-width:600px){.footer{padding-top:48px}.footer-grid{padding-bottom:35px}.context-list{margin-top:35px}.guidance-link{font-size:12px}}
 
 /* Softer typography and colour rhythm for the service experience. */
