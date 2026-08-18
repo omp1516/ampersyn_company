@@ -71,3 +71,5 @@ else{
 initMobileServiceNav();
 const footerPhone=document.querySelector('footer .footer-phone');
 if(footerPhone&&!document.querySelector('.footer-address'))footerPhone.insertAdjacentHTML('afterend','<address class="footer-address"><strong style="color:#fff;font-size:11px;letter-spacing:.06em;text-transform:uppercase">India Office</strong><br>13th Floor, Unit 12A04B<br>Manjera Trinity Corporate<br>JNTU–Hitech, Kukatpally<br>Hyderabad, Telangana — 500072</address>');
+const footerGrid=document.querySelector('footer .footer-grid');
+if(footerGrid&&!footerGrid.querySelector('.footer-directory')){const directory=document.createElement('div');directory.className='footer-links footer-directory';directory.innerHTML='<p>Capabilities</p><div class="footer-service-links">'+Object.entries(services).map(([slug,item])=>`<a href="/services/${slug}/">${item.title}</a>`).join('')+'</div>';footerGrid.insertBefore(directory,footerGrid.querySelector('.footer-links'));}
