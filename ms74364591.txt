@@ -1,1 +1,5 @@
-
+{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "ampersyn.com",
+  "Id": "ba62db68-3248-4de5-99fa-992187f667f3"
+}
