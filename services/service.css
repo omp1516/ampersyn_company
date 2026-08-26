@@ -194,7 +194,7 @@ h1{max-width:760px;font-size:clamp(44px,5.35vw,76px);font-weight:500;letter-spac
 
 /* Mobile navigation keeps every service and site destination within reach. */
 .mobile-menu-toggle{display:none}
-@media(max-width:800px){
+@media(max-width:980px){
   .site-header{position:relative;z-index:20}
   .nav-wrap{min-height:74px}
   .mobile-menu-toggle{display:inline-flex;align-items:center;justify-content:center;padding:9px 12px;border:1px solid rgba(8,41,70,.28);border-radius:999px;background:transparent;color:var(--navy);font:600 11px Manrope,Arial,sans-serif;letter-spacing:.03em}
@@ -232,13 +232,13 @@ h1{max-width:760px;font-size:clamp(44px,5.35vw,76px);font-weight:500;letter-spac
   @keyframes service-link-premium{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 }
 
-@media(max-width:800px){
+@media(max-width:980px){
   .services-flyout{padding:4px 0 12px;background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none;box-shadow:none;animation:none}
   .services-flyout a{padding:10px 0;border-radius:0;opacity:1;animation:none}
 }
 
 /* Mobile services reads as a composed accordion rather than a long plain list. */
-@media(max-width:800px){
+@media(max-width:980px){
   .services-menu{margin:5px 0 7px;border:0}
   .services-menu summary{display:flex;align-items:center;justify-content:space-between;padding:12px 14px!important;border:1px solid rgba(8,41,70,.13);border-radius:4px;background:linear-gradient(100deg,rgba(8,125,193,.07),rgba(217,255,67,.14));font-weight:700}
   .services-menu summary::after{margin-left:auto;color:#087dc1;transition:transform .25s cubic-bezier(.16,1,.3,1)}
@@ -248,7 +248,7 @@ h1{max-width:760px;font-size:clamp(44px,5.35vw,76px);font-weight:500;letter-spac
   .services-flyout a,.services-flyout a:hover{padding:10px 8px!important;border-bottom:1px solid rgba(8,41,70,.09)!important;color:var(--navy)!important;font-size:12px;background:transparent!important}
   .services-flyout a:last-child{border-bottom:0!important}
 }
-@media(max-width:800px) and (prefers-reduced-motion:no-preference){
+@media(max-width:980px) and (prefers-reduced-motion:no-preference){
   .services-menu[open] .services-flyout{animation:mobile-service-panel-in .28s cubic-bezier(.16,1,.3,1) both!important}
   /* Keep service names available immediately; some mobile browsers defer child animations in <details>. */
   .services-menu[open] .services-flyout a{opacity:1!important;animation:none!important}
@@ -256,3 +256,54 @@ h1{max-width:760px;font-size:clamp(44px,5.35vw,76px);font-weight:500;letter-spac
   @keyframes mobile-service-panel-in{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:translateY(0)}}
   @keyframes mobile-service-link-in{from{opacity:0;transform:translateX(-7px)}to{opacity:1;transform:translateX(0)}}
 }
+footer .footer-legal{max-width:1180px;margin:28px auto 0;padding:18px 0 0;border-top:1px solid rgba(216,229,235,.16);color:rgba(216,229,235,.72);font-size:10px;line-height:1.6}
+footer .footer-legal p{margin:0 0 6px;color:inherit;font-size:inherit;line-height:inherit}
+footer .footer-legal p:last-child{margin-bottom:0}
+footer .footer-legal strong{color:rgba(255,255,255,.92);font-weight:700;letter-spacing:.025em}
+footer .footer-legal a{color:#d9ff43;text-decoration:underline;text-underline-offset:2px}
+footer .footer-legal a:hover{color:#fff}
+@media(max-width:800px){footer .footer-legal{width:calc(100% - 36px);margin-top:24px;padding-top:15px;font-size:9px;line-height:1.55}}
+footer .footer-bottom{display:flex;flex-wrap:wrap;align-items:center;gap:12px}
+footer .footer-bottom .footer-legal{box-sizing:border-box;order:-1;flex:0 0 100%;width:100%;max-width:none;margin:0 0 18px;padding:0 0 18px;border-top:0;border-bottom:1px solid rgba(216,229,235,.16)}
+footer .footer-bottom>p:empty{display:none}
+footer .footer-bottom .footer-legal p:first-child{font-size:11px;line-height:1.5;color:rgba(255,255,255,.92)}
+footer .footer-bottom .footer-legal p:last-child{max-width:1100px;font-size:10.5px;line-height:1.55}
+footer .footer-bottom .footer-legal p{margin:0 0 6px;color:inherit;font-size:inherit;line-height:inherit}
+footer .footer-bottom .footer-legal p:last-child{margin-bottom:0}
+@media(max-width:800px){footer .footer-bottom .footer-legal{margin-top:15px;padding-top:15px}}
+footer .footer-bottom .footer-legal-company span{display:block}
+footer .footer-bottom .footer-legal-company span+span{margin-top:3px}
+
+/* Keep the legal note visually close to the footer content. */
+footer .footer-bottom .footer-legal{position:relative;top:0;text-align:center;padding-bottom:22px;margin-bottom:22px}
+
+footer .footer-bottom .footer-legal p{max-width:1180px;margin-left:auto;margin-right:auto}
+footer .footer-bottom .footer-legal-company span+span{margin-top:4px}
+
+header.site-header .brand img,footer.footer .brand img,footer.footer .footer-brand img,footer.footer .footer-logo img{background:#000!important;padding:3px;box-sizing:border-box;border-radius:4px!important;object-fit:contain}
+
+
+/* Standard AI & Agents footer layout. */
+footer{padding:65px 0 25px;background:#061f36;color:#d8e5eb}
+footer .footer-inner{display:grid;grid-template-columns:1.2fr 1.2fr .8fr .9fr;gap:38px;align-items:start}
+footer .footer-brand{display:flex;flex-direction:column;align-items:flex-start}
+footer .footer-logo{display:inline-flex;align-items:center;margin-bottom:8px;color:#fff}
+footer .footer-logo img{width:44px;height:40px;object-fit:contain}
+footer .footer-brand p{max-width:250px;color:#a3bbc7;font-size:13px;line-height:1.6}
+footer .footer-email,footer .footer-phone{display:block;color:#fff;text-decoration:none;font-size:13px;margin-top:10px}
+footer .footer-column{display:flex;flex-direction:column;gap:9px}
+footer .footer-column h3{margin:0 0 10px;color:#d9ff43;font:10px 'DM Mono',monospace;letter-spacing:.1em;text-transform:uppercase}
+footer .footer-column a,footer .footer-audience p{color:#a3bbc7;font-size:12px;text-decoration:none;margin:0}
+footer .footer-service-links{columns:2}
+footer .footer-service-links a{display:block;margin-bottom:8px}
+footer .footer-bottom{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:50px;padding-top:18px;border-top:1px solid rgba(216,229,235,.16);color:#8ca7b4;font-size:11px}
+footer .footer-bottom a{color:#fff;text-decoration:none}
+footer .footer-bottom>p:empty{display:none}
+footer .footer-bottom .footer-legal{box-sizing:border-box;order:-1;flex:0 0 100%;width:100%;max-width:none;margin:0 0 18px;padding:0 0 18px;border-top:0;border-bottom:1px solid rgba(216,229,235,.16);text-align:center;color:rgba(216,229,235,.72);font-size:10px;line-height:1.6}
+footer .footer-bottom .footer-legal p{margin:0 0 6px;color:inherit;font-size:inherit;line-height:inherit}
+footer .footer-bottom .footer-legal p:first-child{font-size:11px;color:rgba(255,255,255,.92)}
+footer .footer-bottom .footer-legal p:last-child{margin-bottom:0}
+footer .footer-bottom .footer-legal-company span{display:block}
+footer .footer-bottom .footer-legal a{color:#d9ff43;text-decoration:underline;text-underline-offset:2px}
+footer .footer-logo img{background:#000!important;padding:3px;box-sizing:border-box;border-radius:4px!important;object-fit:contain}
+@media(max-width:800px){footer .footer-inner{grid-template-columns:1fr 1fr;gap:30px}footer .footer-brand{grid-column:1/-1}footer .footer-service-links{columns:1}footer .footer-bottom{display:block}footer .footer-bottom>p{margin:8px 0}footer .footer-bottom .footer-legal{margin-bottom:15px;padding-bottom:18px}}
