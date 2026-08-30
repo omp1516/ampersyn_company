@@ -60,6 +60,55 @@
     .footer-bottom>p:nth-child(2){width:100%;margin-left:0!important;text-align:right!important}
   }
 </style>
+
+<style id="home-footer-alignment">
+  /* Homepage footer: legal information centered above the lower location row. */
+  footer .footer-bottom{
+    display:flex!important;
+    flex-wrap:wrap!important;
+    align-items:center!important;
+    gap:12px!important;
+  }
+  footer .footer-bottom .footer-legal{
+    box-sizing:border-box!important;
+    order:-1!important;
+    flex:0 0 100%!important;
+    width:100%!important;
+    max-width:none!important;
+    margin:0 0 18px!important;
+    padding:0 0 18px!important;
+    border-top:0!important;
+    border-bottom:1px solid rgba(216,229,235,.16)!important;
+    text-align:center!important;
+  }
+  footer .footer-bottom .footer-legal p{
+    max-width:1180px!important;
+    margin:0 auto 6px!important;
+    color:rgba(255,255,255,.92)!important;
+    font-size:10px!important;
+    line-height:1.6!important;
+    text-align:center!important;
+  }
+  footer .footer-bottom .footer-legal p:last-child{
+    margin-bottom:0!important;
+    color:#9ec5dc!important;
+  }
+  footer .footer-bottom>p:empty{display:none!important}
+  footer .footer-bottom>p:nth-child(2){
+    margin:0!important;
+    color:#9ec5dc!important;
+    text-align:left!important;
+  }
+  footer .footer-bottom>a{
+    margin-left:auto!important;
+    color:#fff!important;
+    font-weight:700!important;
+  }
+  @media(max-width:800px){
+    footer .footer-bottom .footer-legal{margin-bottom:15px!important;padding-bottom:15px!important}
+    footer .footer-bottom>p:nth-child(2){width:auto!important;margin:0!important;text-align:left!important}
+  }
+</style>
 </head>
 <body id="top">
   <style id="welcome-colour-preview">
